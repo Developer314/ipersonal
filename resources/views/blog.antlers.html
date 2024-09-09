@@ -1,0 +1,36 @@
+
+    
+    <div class="container-fluid" id="pigraBlog">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-3">
+                    <div class="blog-header h-100 bg-dark pt-6 pe-6 pb-6">
+                        <div class="text-start d-flex flex-column justify-content-center wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                            <p class="text-white sub-title">Blog</p>
+                            <!--<h1 class="display-6 text-white mb-0">{{title}}</h1>-->
+                            <p class="text-white mb-3"><i class="fa fa-calendar-alt me-2"></i> {{date | format('d  F Y')}}</p>
+                            <p class="text-white mb-3">By {{ author.name }}</p>
+                            <p class="text-white mb-3">In {{category}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="blog-content h-100 pt-6 ps-6 pb-6">
+                        <div class="row g-4">
+                            
+                            <h1 class="display-6 mb-0">{{title}}</h1>
+                            
+
+                            <div class="col-xl-12 wow fadeInUp animated" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s;">
+                                <div class="bg-light p-4" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;">
+                                    <img src="{{glide:image preset="blog_detail"}}" class="img-fluid w-100" style="border-radius: 68% 32% 100% 0% / 0% 75% 25% 100%;" alt="{{title}}">
+                                </div>
+                            </div>
+
+
+                            {{ content }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,130 @@
+title: SEO
+fields:
+  -
+    handle: seo_title
+    field:
+      input_type: text
+      default: iPersonal
+      antlers: false
+      type: text
+      display: 'SEO Title'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: meta_keywords
+    field:
+      default: 'keywords, keys, tags'
+      antlers: false
+      type: textarea
+      display: 'Meta Keywords'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: meta_description
+    field:
+      default: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam repudiandae'
+      antlers: false
+      type: textarea
+      display: 'Meta Description'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: og_title
+    field:
+      input_type: text
+      default: iPersonal
+      antlers: false
+      type: text
+      display: 'OG Title'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: og_description
+    field:
+      default: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam repudiandae'
+      antlers: false
+      type: textarea
+      display: 'OG Description'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: og_image
+    field:
+      max_files: 1
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: true
+      show_filename: true
+      show_set_alt: true
+      type: assets
+      display: 'OG Image'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: og_site_name
+    field:
+      input_type: text
+      placeholder: iPersonal
+      antlers: false
+      type: text
+      display: 'OG Site Name'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: twitter_card_type
+    field:
+      options:
+        summary: 'Default card with a brief summary of the page.'
+        summary_large_image: 'Card with a larger image and summary.'
+        app: 'Card with a link to a mobile app.'
+        player: 'Card with a video or audio player.'
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: true
+      cast_booleans: false
+      default: summary
+      type: select
+      display: 'Twitter Card Type'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: twitter_site
+    field:
+      input_type: text
+      default: '@yoursite'
+      antlers: false
+      type: text
+      display: 'Twitter Site'
+      instructions: 'twitter:site'
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
