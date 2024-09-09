@@ -1,0 +1,9 @@
+{
+    "name": "my-vendor-name/ipersonal",
+    "extra": {
+        "statamic": {
+            "name": "Ipersonal",
+            "description": "Ipersonal starter kit"
+        }
+    }
+}

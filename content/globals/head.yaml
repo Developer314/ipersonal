@@ -1,0 +1,101 @@
+title: Head
+data:
+  favicon: images/icons8-favicon-50.png
+  extra_scripts: '<!-- Extra Scripts -->'
+  html: |-
+    <!DOCTYPE html> 
+    <html lang="{{ site:short_locale }}"> 
+
+        <head>
+            <meta charset="utf-8">
+            <title>{{meta_title}}</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="{{meta_keywords}}" name="keywords">
+            <meta content="{{meta_description}}" name="description">
+            <link rel="icon" type="image/png" href="{{head:favicon}}"/>
+            <!-- Google Web Fonts -->
+            <!-- Google Web Fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+            <!-- Icon Font Stylesheet -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+            <!-- Libraries Stylesheet -->
+            <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+            <link href="/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+            <link href="/assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+            <!-- Customized Bootstrap Stylesheet -->
+            <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+
+            <!-- Template Stylesheet -->
+            <link href="/assets/css/style.css" rel="stylesheet">
+
+            <!-- Open Graph-->
+            <meta property="og:title" content="{{og_title}}">
+            <meta property="og:description" content="{{og_description}}">
+            <meta property="og:image" content="{{ site.permalink }}{{og_image}}">
+            <meta property="og:site_name" content="{{og_site_name}}">
+            <meta property="og:url" content="{{ current_full_url}}">
+            <meta name="twitter:card" content="{{twitter_card_type}}">
+            <meta name="twitter:title" content="{{og_title}}">
+            <meta name="twitter:description" content="{{og_description}}">
+            <meta name="twitter:image" content="{{ site.permalink }}{{og_image}}">
+            <meta name="twitter:site" content="{{twitter_site}}">
+
+            {{extra_scripts}}
+    <style>
+    .bg-dark {
+        background-color: {{head.dark_background}} !important;
+    }
+
+    .bg-primary { 
+        background-color: {{head.primary_background}} !important;
+    }
+
+    .bg-light{
+        background-color: {{head.background_light}} !important;
+    }
+    .text-primary,p{
+        color: {{head.text_color}} !important;
+    }
+    .btn-primary{
+        background-color: {{head.primary_background}};
+    }
+    .container-fluid::before{
+     background:{{head.dark_background}} !important;
+    }
+    </style>
+        </head>
+
+        <body>
+     {{head:navigation}}
+  navigation: |-
+    <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">{{spinner_loading_text}}</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+     <!-- Navbar Start -->
+            <div class="container-fluid nav-section border-0">
+                <nav class="navbar navbar-light">
+                    <div class="navbar-nav flex-column">
+                        <a href="/#ipersonalHome" class="nav-item nav-link active"><span class="fa fa-home"></span> Home</a>
+                        <a href="/#ipersonalAbout" class="nav-item nav-link"><span class="far fa-address-card"></span> About</a>
+                        <a href="/#ipersonalService" class="nav-item nav-link"><span class="fab fa-servicestack"></span> Service</a>
+                        <a href="/#ipersonalBlog" class="nav-item nav-link"><span class="fa fa-blog"></span> Blog</a>
+                        <a href="/#ipersonalContact" class="nav-item nav-link"><span class="fas fa-address-book"></span> Contact</a>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+  dark_background: '#7a12e2'
+  primary_background: '#46821c'
+  background_light: '#929ab0'
+  text_color: '#1b0804'
